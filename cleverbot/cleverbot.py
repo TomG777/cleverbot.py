@@ -27,8 +27,9 @@ class Cleverbot(object):
     """
     HOST = "www.cleverbot.com"
     PROTOCOL = "http://"
-    RESOURCE = "/webservicemin?uc=321&"
-    API_URL = PROTOCOL + HOST + RESOURCE
+    RESOURCE = "/webservicemin?uc=3210&"
+    BOT_API = "&botapi=cleverbot-py"
+    API_URL = PROTOCOL + HOST + RESOURCE + BOT_API
 
     headers = {
         'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)',
